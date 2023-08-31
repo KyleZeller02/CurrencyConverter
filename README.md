@@ -1,31 +1,55 @@
 
-
 # Currency Converter App
 
-## Description
+## Table of Contents
 
-Currency Converter is a streamlined, user-friendly iOS app built with SwiftUI, designed to simplify the process of converting currencies right from your pocket! This application utilizes real-time exchange rates, allowing users to convert between different currencies effortlessly.
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+Currency Converter is a simple yet powerful application that converts currency in real-time. The app is built using SwiftUI for the UI and Swift's new concurrency model for network calls. Whether you need to convert USD to EUR or GBP to JPY, this app has got you covered.
 
 ## Features
 
-- **Real-Time Conversion**: Always stay up-to-date with the latest exchange rates.
-- **User-Friendly Interface**: A sleek, intuitive design that makes conversions easy.
-- **Multiple Currencies**: Supports conversion between a multitude of global currencies.
-- **Offline Support**: Previously loaded rates are saved for offline conversions.
-- **Fast and Efficient**: Built with performance in mind for a smooth user experience.
+- Real-time currency conversion
+- Support for multiple currencies (USD, EUR, JPY, GBP, etc.)
+- User-friendly interface with SwiftUI
+- Robust ViewModel architecture
+- Error-handling for API failures
+- Thorough documentation for easy code maintainability
 
-## How To Use
+## Technologies Used
 
-1. Open the app and select your 'Base' currency.
-2. Select the 'Target' currency to which you wish to convert.
-3. Enter the amount in the base currency.
-4. Hit 'Convert' and voila, the converted amount in the target currency will be displayed!
+- SwiftUI for UI
+- Swift 5.5's new concurrency model (`async/await`)
+- URLSession for API requests
+- JSONDecoder for JSON parsing
 
-## Installation
+## Getting Started
 
-Clone the GitHub repository and open the project in Xcode.
+### Prerequisites
 
-```
-git clone https://github.com/YourUsername/CurrencyConverter.git
-```
+- Xcode 13 or later
+- Swift 5.5 or later
+- iOS 15 or later
 
+### Installation
+
+1. Clone this repository: `git clone https://github.com/KyleZeller02/CurrencyConverter.git`
+2. Navigate into the project directory: `cd CurrencyConverter`
+3. Open the project in Xcode: `open CurrencyConverter.xcodeproj`
+4. Build and run the app on your iOS simulator or real device.
+
+## Usage
+
+1. Launch the app.
+2. Enter the amount you want to convert in the 'Source Amount' TextField.
+3. Select the source currency using the 'Source Currency' Picker.
+4. Select the destination currency using the 'Destination Currency' Picker.
+5. Press the 'Convert' button to perform the conversion.
